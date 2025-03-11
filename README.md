@@ -33,4 +33,5 @@ This project leverages cutting-edge GitOps practices to automate and optimize th
  ![First try](https://github.com/Vlad774/vprofile-action/blob/main/load%20balancer.png)
  ![First try](https://github.com/Vlad774/vprofile-action/blob/main/user.png)
  ![First try](https://github.com/Vlad774/vprofile-action/blob/main/vpc.png)
+ ![First try](https://github.com/Vlad774/vprofile-action/blob/main/actions.png)
  ![First try](https://github.com/Vlad774/CICD_on_AWS/blob/main/Service_running.png)
