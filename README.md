@@ -1,23 +1,33 @@
-# Prerequisites
-#####
-- JDK 11
-- Maven 3
-- MySQL 8 
+# Advanced GitOps for Streamlined Infrastructure and Application Management 🚀
+##  📌 Description
+This project leverages cutting-edge GitOps practices to automate and optimize the management of both infrastructure and applications. By integrating robust technologies such as Git, Terraform, Kubernetes, and continuous integration/delivery tools, the project aims to create a seamless, secure, and highly efficient workflow.
 
-# Technologies 
-- Spring MVC
-- Spring Security
-- Spring Data JPA
-- Maven
-- JSP
-- MySQL
-# Database
-Here,we used Mysql DB 
-MSQL DB Installation Steps for Linux ubuntu 14.04:
-- $ sudo apt-get update
-- $ sudo apt-get install mysql-server
+## 🛠Technologies
+- Git & GitHub Actions: Manages all code changes and automates CI/CD pipelines.
+- Terraform & AWS: Provisions and manages infrastructure with high efficiency.
+- Docker, Amazon ECR, Kubernetes & Amazon EKS: Ensures consistent deployments and scalable orchestration of applications.
+- Maven & Sonar CLI: Guarantees code quality with automated builds and real-time analysis.
+  
+## 🔄 CI/CD Workflow
+- **Automated Testing & Secure Deployment**:
+    - Automated Testing: Validates and plans deployments in the staging branch, ensuring alignment with production standards.
+    - Secure Deployment: Enforces peer reviews for merges to the main branch, enhancing security and compliance.
+- **Continuous Integration & Deployment**:
+    - Continuous Integration: Builds, tests, and pushes Docker images to ECR automatically.
+    - Continuous Deployment: Uses Helm for dynamic updates in Kubernetes, optimizing application rollouts and management.
+     
+## ✨ Key Features
+- ✔ Advanced Security Protocols: Enforces encrypted secrets, least privilege access, and continuous audits.
+- ✔ Disaster Recovery: Features automated backups and multi-region strategies for high availability.
+- ✔ Scalability and Flexibility: Enables rapid adjustments to infrastructure and application deployment.
+- ✔ Comprehensive Documentation: Provides clear documentation and change logs for easy onboarding and audits.
+ 
 
-Then look for the file :
-- /src/main/resources/db_backup.sql
-- db_backup.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < db_backup.sql
+## Walk-through:
+
+ ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/diagramm.png) 
+ ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/ec2-servers.png) 
+ ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/ansible_screen.png)
+ ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/docker_images.png)
+ ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/builds.png)
+ ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/pipeline%20is%20running.png)
