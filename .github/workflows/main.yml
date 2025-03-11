@@ -90,9 +90,9 @@ jobs:
     - name: Get Kube config file
       run: aws eks update-kubeconfig --region ${{ env.AWS_REGION }} --name ${{ env.EKS_CLUSTER }}
 
-    - name: Ensure Docker Registry Secret
+    - name: Refresh Docker Registry Secret
       run: |
-        kubectl get secret regcred && kubectl delete secret regcred || true
+        kubectl delete secret regcred --ignore-not-found
         kubectl create secret docker-registry regcred \
           --docker-server=${{ secrets.REGISTRY }} \
           --docker-username=AWS \
@@ -110,5 +110,5 @@ jobs:
         namespace: default
         values: appimage=${{ secrets.REGISTRY }}/${{ env.ECR_REPOSITORY }},apptag=${{ github.run_number }}
         name: vprofile-stack
-        
+
     
