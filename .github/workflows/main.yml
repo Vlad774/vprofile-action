@@ -90,13 +90,16 @@ jobs:
     - name: Get Kube config file
       run: aws eks update-kubeconfig --region ${{ env.AWS_REGION }} --name ${{ env.EKS_CLUSTER }}
 
-    - name: Refresh Docker Registry Secret
+    - name: Ensure Docker Registry Secret
       run: |
-        kubectl delete secret regcred --ignore-not-found
-        kubectl create secret docker-registry regcred \
-          --docker-server=${{ secrets.REGISTRY }} \
-          --docker-username=AWS \
-          --docker-password=$(aws ecr get-login-password)
+        if ! kubectl get secret regcred; then
+          kubectl create secret docker-registry regcred \
+            --docker-server=${{ secrets.REGISTRY }} \
+            --docker-username=AWS \
+            --docker-password=$(aws ecr get-login-password)
+        else
+          echo "Secret 'regcred' already exists, no creation needed."
+        fi
       shell: /bin/bash
 
     - name: Deploy Helm
@@ -110,5 +113,6 @@ jobs:
         namespace: default
         values: appimage=${{ secrets.REGISTRY }}/${{ env.ECR_REPOSITORY }},apptag=${{ github.run_number }}
         name: vprofile-stack
+
 
     
