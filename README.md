@@ -3,10 +3,11 @@
 This project leverages cutting-edge GitOps practices to automate and optimize the management of both infrastructure and applications. By integrating robust technologies such as Git, Terraform, Kubernetes, and continuous integration/delivery tools, the project aims to create a seamless, secure, and highly efficient workflow.
 
 ## 🛠Technologies
-- Git & GitHub Actions: Manages all code changes and automates CI/CD pipelines.
-- Terraform & AWS: Provisions and manages infrastructure with high efficiency.
-- Docker, Amazon ECR, Kubernetes & Amazon EKS: Ensures consistent deployments and scalable orchestration of applications.
-- Maven & Sonar CLI: Guarantees code quality with automated builds and real-time analysis.
+- 🐙🔧 Git & GitHub Actions: Manages all code changes and automates CI/CD pipelines.
+- 🏗️☁️ Terraform & AWS: Provisions and manages infrastructure with high efficiency.
+- 🐳📦 Docker, Amazon ECR, Kubernetes & Amazon EKS: Ensures consistent deployments and scalable orchestration of applications.
+- ⚓🌐 Kubernetes & Amazon EKS | — Orchestrates and manages container deployments at scale.
+- 🧰🔍 Maven & Sonar CLI: Guarantees code quality with automated builds and real-time analysis.
   
 ## 🔄 CI/CD Workflow
 - **Automated Testing & Secure Deployment**:
