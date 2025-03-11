@@ -25,9 +25,11 @@ This project leverages cutting-edge GitOps practices to automate and optimize th
 
 ## Walk-through:
 
- ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/diagramm.png) 
- ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/ec2-servers.png) 
- ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/ansible_screen.png)
- ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/docker_images.png)
- ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/builds.png)
- ![First try](https://github.com/Vlad774/website-for-pipeline/blob/main/screens/pipeline%20is%20running.png)
+ ![First try](https://github.com/Vlad774/vprofile-action/blob/main/diagramm.png) 
+ ![First try](https://github.com/Vlad774/vprofile-action/blob/main/code.png) 
+ ![First try](https://github.com/Vlad774/vprofile-action/blob/main/ec2.png)
+ ![First try](https://github.com/Vlad774/vprofile-action/blob/main/eks.png)
+ ![First try](https://github.com/Vlad774/vprofile-action/blob/main/load%20balancer.png)
+ ![First try](https://github.com/Vlad774/vprofile-action/blob/main/user.png)
+ ![First try](https://github.com/Vlad774/vprofile-action/blob/main/vpc.png)
+ ![First try](https://github.com/Vlad774/CICD_on_AWS/blob/main/Service_running.png)
